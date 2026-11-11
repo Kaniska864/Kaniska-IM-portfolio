@@ -1,0 +1,328 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="Kaniska's influencer marketing portfolio — creator partnerships, NRI audience strategy, campaign execution and results for Codeyoung.">
+<title>Kaniska | Influencer Marketing Portfolio</title>
+<style>
+:root{
+  --ink:#17191d;--muted:#626a73;--paper:#f7f7f4;--white:#fff;
+  --yellow:#ffd400;--line:#e5e6e2;--soft:#eeefeb;--teal:#0b7478;
+}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{margin:0;background:var(--paper);color:var(--ink);font-family:Inter,Arial,Helvetica,sans-serif}
+a{color:inherit}
+.topbar{height:34px;background:var(--yellow);display:flex;align-items:center;justify-content:center;padding:0 5vw;font-size:11px;font-weight:700;letter-spacing:.03em}
+.nav{background:#101114;color:#fff;position:sticky;top:0;z-index:10;border-bottom:1px solid #2b2d31}
+.nav-inner{max-width:1180px;margin:auto;min-height:66px;padding:0 24px;display:flex;align-items:center;justify-content:space-between;gap:20px}
+.brand{font-weight:900;font-size:21px;letter-spacing:-.04em;white-space:nowrap}
+.brand span{color:var(--yellow)}
+.navlinks{display:flex;gap:27px;align-items:center;font-size:13px}
+.navlinks a{text-decoration:none;color:#f1f1f1;opacity:.9}
+.navlinks a:hover{color:var(--yellow)}
+.contact{background:var(--yellow);color:#101114!important;padding:11px 17px;border-radius:30px;font-weight:800}
+.menu{display:none;background:none;border:1px solid #555;color:white;padding:8px 11px;border-radius:8px}
+.hero{background:#111317;color:white;padding:82px 24px 70px;position:relative;overflow:hidden}
+.hero:after{content:"";position:absolute;width:430px;height:430px;border:1px solid #373b42;border-radius:50%;right:-100px;top:-120px;box-shadow:0 0 0 55px #1a1c21,0 0 0 110px #15171b}
+.hero-inner{max-width:1120px;margin:auto;position:relative;z-index:1}
+.eyebrow{color:var(--yellow);font-size:11px;letter-spacing:.18em;font-weight:800;text-transform:uppercase}
+h1{font-size:clamp(48px,8vw,94px);line-height:.92;letter-spacing:-.075em;margin:18px 0 20px;max-width:820px}
+h1 em{font-style:normal;color:var(--yellow)}
+.hero p{font-size:17px;line-height:1.65;color:#c7cbd0;max-width:690px;margin:0}
+.hero-meta{display:flex;gap:12px;flex-wrap:wrap;margin-top:32px}
+.pill{border:1px solid #4a4e55;color:#e7e9ec;border-radius:30px;padding:9px 14px;font-size:11px}
+main{max-width:1120px;margin:auto;padding:0 24px}
+.intro{display:grid;grid-template-columns:1.15fr .85fr;gap:55px;padding:72px 0 60px;border-bottom:1px solid var(--line)}
+.kicker{font-size:11px;font-weight:800;letter-spacing:.16em;color:var(--teal);text-transform:uppercase}
+h2{font-size:clamp(30px,4vw,46px);line-height:1.03;letter-spacing:-.055em;margin:13px 0 17px}
+.intro p,.section-intro{font-size:15px;line-height:1.75;color:var(--muted);margin:0}
+.focusbox{background:#fff;border:1px solid var(--line);padding:25px;border-radius:15px}
+.focusbox h3{font-size:13px;margin:0 0 13px}
+.focusbox ul{margin:0;padding-left:18px;color:var(--muted);font-size:13px;line-height:1.9}
+.section{padding:70px 0;border-bottom:1px solid var(--line)}
+.section-head{display:flex;justify-content:space-between;align-items:end;gap:30px;margin-bottom:28px}
+.section-head h2{margin-bottom:0}
+.section-head p{max-width:390px}
+.strategy-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:12px;margin-top:30px}
+.strategy{background:#fff;border:1px solid var(--line);padding:20px;border-radius:12px;min-height:145px}
+.strategy b{display:block;font-size:12px;margin-bottom:12px;color:var(--teal);letter-spacing:.1em}
+.strategy h3{font-size:16px;margin:0 0 8px}
+.strategy p{font-size:12px;line-height:1.55;color:var(--muted);margin:0}
+.creator-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:22px}
+.creator-card{background:#fff;border:1px solid var(--line);border-radius:15px;overflow:hidden;display:flex;flex-direction:column;transition:transform .2s,box-shadow .2s}
+.creator-card:hover{transform:translateY(-4px);box-shadow:0 14px 35px #18202a12}
+.media{height:270px;position:relative;display:flex;align-items:end;padding:18px;color:#fff;overflow:hidden;background:linear-gradient(145deg,#1a3338,#376d70)}
+.agency-profile{height:270px;background:#e9e9e9}.agency-profile img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;object-position:center;z-index:1}.media-swati{height:auto;aspect-ratio:16/9}.media-deepanu{height:300px}.media img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;object-position:center 28%;z-index:0}.media:before{content:"";position:absolute;inset:0;background:radial-gradient(circle at 75% 20%,#ffffff25,transparent 32%),linear-gradient(0deg,#0008,transparent 70%)}
+.media.alt1{background:linear-gradient(145deg,#463b2f,#b48a5a)}
+.media.alt2{background:linear-gradient(145deg,#26364c,#758ba2)}
+.media.alt3{background:linear-gradient(145deg,#3b304a,#977fa6)}
+.media.alt4{background:linear-gradient(145deg,#2d4940,#8ca58c)}
+.media.alt5{background:linear-gradient(145deg,#3b3d43,#8d939a)}
+.media-content{position:relative;z-index:1}
+.media .initial{font-size:64px;font-weight:900;letter-spacing:-.08em;opacity:.92;line-height:1}
+.media .media-label{font-size:10px;text-transform:uppercase;letter-spacing:.15em;margin-top:9px;opacity:.85}
+.play{position:absolute;z-index:2;top:45%;left:50%;transform:translate(-50%,-50%);width:54px;height:54px;border-radius:50%;background:var(--yellow);display:grid;place-items:center;color:#111;font-size:20px;padding-left:3px;box-shadow:0 5px 18px #0004}
+.creator-body{padding:20px;display:flex;flex-direction:column;flex:1}
+.creator-top{display:flex;justify-content:space-between;align-items:start;gap:12px}
+.creator-top h3{font-size:19px;letter-spacing:-.04em;margin:0 0 4px}
+.handle{font-size:11px;color:var(--muted)}
+.tag{background:#f0f1ed;border-radius:20px;padding:6px 9px;font-size:9px;color:#555;white-space:nowrap}
+.creator-desc{font-size:12px;line-height:1.55;color:var(--muted);margin:15px 0}
+.metrics{display:grid;grid-template-columns:1fr 1fr;gap:8px;margin:0 0 14px}
+.metric{background:var(--paper);border-radius:9px;padding:11px}
+.metric strong{display:block;font-size:20px;letter-spacing:-.04em;color:var(--teal)}
+.metric span{font-size:9px;color:var(--muted);text-transform:uppercase;letter-spacing:.07em}
+.commercial{font-size:11px;line-height:1.7;border-top:1px solid var(--line);padding-top:12px;color:#414850;margin-top:auto}
+.commercial b{color:var(--ink)}
+.view-link{display:flex;align-items:center;justify-content:center;background:#111317;color:white;text-decoration:none;font-size:11px;font-weight:800;padding:13px;border-radius:8px;margin-top:16px}
+.view-link:hover{background:var(--teal)}
+.view-link span{color:var(--yellow);margin-left:8px;font-size:15px}
+.note{font-size:11px;color:var(--muted);line-height:1.6;margin-top:18px}
+.closing{background:#111317;color:white;margin:70px 0 0;padding:55px 24px}
+.closing-inner{max-width:1120px;margin:auto;display:flex;align-items:center;justify-content:space-between;gap:30px}
+.closing h2{font-size:clamp(32px,5vw,55px);margin:10px 0}
+.closing p{color:#bfc4ca;font-size:13px;line-height:1.6;max-width:520px}
+.closing a{display:inline-block;background:var(--yellow);color:#111;text-decoration:none;font-weight:800;padding:14px 19px;border-radius:30px;font-size:12px}
+footer{background:#0a0b0d;color:#9299a2;padding:18px 24px;font-size:10px}
+.footer-inner{max-width:1120px;margin:auto;display:flex;justify-content:space-between;gap:20px}
+@media(max-width:850px){
+ .navlinks{display:none;position:absolute;top:66px;left:0;right:0;background:#101114;padding:20px 24px;flex-direction:column;align-items:flex-start}
+ .navlinks.open{display:flex}.menu{display:block}.intro{grid-template-columns:1fr;gap:25px}
+ .creator-grid{grid-template-columns:repeat(2,1fr)}.strategy-grid{grid-template-columns:repeat(2,1fr)}
+}
+@media(max-width:560px){
+ .hero{padding:62px 20px 54px}main{padding:0 18px}.creator-grid{grid-template-columns:1fr}
+ .media{height:235px}.section{padding:52px 0}.section-head{display:block}
+ .strategy-grid{grid-template-columns:1fr 1fr}.closing-inner{display:block}.closing a{margin-top:12px}
+ .footer-inner{display:block;line-height:2}
+}
+
+.agency-profile-tanya img,.agency-profile-tanisha img{transform:scale(1.15)}
+
+</style>
+</head>
+<body>
+<div class="topbar">INFLUENCER MARKETING • CREATOR PARTNERSHIPS • CAMPAIGN EXECUTION</div>
+<nav class="nav">
+  <div class="nav-inner">
+    <a class="brand" href="#home" style="text-decoration:none">KANISKA<span>.</span></a>
+    <button class="menu" aria-label="Open menu" onclick="document.querySelector('.navlinks').classList.toggle('open')">Menu</button>
+    <div class="navlinks">
+      <a href="#about">About</a><a href="#approach">Approach</a><a href="#work">Codeyoung</a><a href="#agency">Agency work</a><a href="#contact" class="contact">Contact</a>
+    </div>
+  </div>
+</nav>
+
+<header class="hero" id="home">
+  <div class="hero-inner">
+    <div class="eyebrow">Influencer marketing portfolio</div>
+    <h1>Building the right<br><em>creator</em> connections.</h1>
+    <p>I'm Kaniska — an influencer marketing professional with experience across creator discovery, influencer partnerships, commercial negotiation and campaign execution. This portfolio brings together selected work across brands and marketing campaigns, including both brand-side and agency experience.</p>
+    <div class="hero-meta">
+      <span class="pill">Creator discovery</span><span class="pill">Influencer partnerships</span><span class="pill">Campaign execution</span>
+    </div>
+  </div>
+</header>
+
+<main>
+<section class="intro" id="about">
+  <div>
+    <div class="kicker">About my work</div>
+    <h2>Connecting brands with the right creators.</h2>
+    <p>My influencer marketing experience spans creator research, audience-fit assessment, outreach, commercial negotiations and campaign coordination. I've worked in both brand-side and agency environments, supporting campaigns for different brands and audiences. The projects featured here are selected examples of that work.</p>
+  </div>
+  <aside class="focusbox">
+    <h3>Areas of experience</h3>
+    <ul>
+      <li>Influencer research and creator shortlisting</li>
+      <li>Creator and audience-fit evaluation</li>
+      <li>Outreach and relationship management</li>
+      <li>Commercial discussions and negotiations</li>
+      <li>Campaign coordination and performance review</li>
+    </ul>
+  </aside>
+</section>
+
+<section class="section" id="approach">
+  <div class="section-head">
+    <div><div class="kicker">How I work</div><h2>From creator discovery<br>to campaign delivery.</h2></div>
+    <p class="section-intro">My contribution across the collaborations covered the key practical stages of influencer marketing.</p>
+  </div>
+  <div class="strategy-grid">
+    <div class="strategy"><b>01 / DISCOVER</b><h3>Creator research</h3><p>Find creators whose audience, location and content match the campaign's target customer.</p></div>
+    <div class="strategy"><b>02 / EVALUATE</b><h3>Audience fit</h3><p>Review parent relevance, audience geography and suitability for Coding and Maths campaigns.</p></div>
+    <div class="strategy"><b>03 / NEGOTIATE</b><h3>Commercials</h3><p>Discuss creator fees and negotiate commercials against campaign budgets.</p></div>
+    <div class="strategy"><b>04 / EXECUTE</b><h3>Coordination</h3><p>Coordinate creator collaborations and publishing, then review reported enrolment outcomes.</p></div>
+  </div>
+</section>
+
+<section class="section" id="work">
+  <div class="section-head">
+    <div><div class="kicker">Brand-side experience · Codeyoung</div><h2>Influencer campaigns for NRI families.</h2></div>
+  </div>
+  <p class="section-intro">Focused on reaching NRI families through mom creators and parent-led communities across international markets.</p>
+  <div class="strategy-grid" style="margin:24px 0 30px;grid-template-columns:repeat(3,1fr)">
+    <div class="strategy"><b>CREATOR SOURCING</b><h3>1,000+</h3><p>Creators researched and scouted, with a focus on NRI mom creators.</p></div>
+    <div class="strategy"><b>CREATOR COLLABORATIONS</b><h3>60+</h3><p>Creators worked with across Codeyoung influencer campaigns.</p></div>
+    <div class="strategy"><b>CAMPAIGN VIEWS</b><h3>4M+</h3><p>Total views generated across the campaigns.</p></div>
+  </div>
+  <p class="section-intro" style="margin-bottom:24px">Selected creator collaborations</p>
+  <div class="creator-grid">
+<article class="creator-card">
+      <a href="https://www.instagram.com/p/DaBu6zcPZ0r/?hl=en" target="_blank" rel="noopener" class="media" aria-label="Open Shivee Chauhan's Instagram campaign post">
+        <img src="assets/shivee-thumbnail.png" alt="Thumbnail for Shivee Chauhan's Codeyoung campaign video">
+        <div class="play">▶</div>
+      </a>
+      <div class="creator-body">
+        <div class="creator-top"><div><h3>Shivee Chauhan</h3><div class="handle">@shiveechauhan</div></div><span class="tag">Instagram</span></div>
+        <p class="creator-desc">Codeyoung creator collaboration focused on the campaign's NRI family audience.</p>
+        <div class="metrics"><div class="metric"><strong>10</strong><span>Reported enrolments</span></div><div class="metric"><strong>₹10L</strong><span>Indicative value*</span></div></div>
+        <div class="commercial">Quoted <b>₹2,00,000</b> · Negotiated <b>₹1,52,000</b><br>Saving <b>₹48,000</b></div>
+        <a class="view-link" href="https://www.instagram.com/p/DaBu6zcPZ0r/?hl=en" target="_blank" rel="noopener">View live content <span>↗</span></a>
+      </div>
+    </article>
+
+<article class="creator-card">
+      <a href="https://www.instagram.com/reel/DaCEPD6MO-P/" target="_blank" rel="noopener" class="media">
+        <img src="assets/hima-thumbnail.png" alt="Hima Journal Codeyoung campaign video thumbnail">
+        <div class="play">▶</div>
+      </a>
+      <div class="creator-body">
+        <div class="creator-top"><div><h3>Hima Journal</h3><div class="handle">@himajournal</div></div><span class="tag">Instagram Reel</span></div>
+        <p class="creator-desc">Creator collaboration delivering the highest reported enrolment count among the examples shared.</p>
+        <div class="metrics"><div class="metric"><strong>22</strong><span>Reported enrolments</span></div><div class="metric"><strong>₹22L</strong><span>Indicative value*</span></div></div>
+        <div class="commercial">Quoted <b>₹1,30,000</b> · Negotiated <b>₹75,000</b><br>Saving <b>₹55,000</b></div>
+        <a class="view-link" href="https://www.instagram.com/reel/DaCEPD6MO-P/" target="_blank" rel="noopener">View live Reel <span>↗</span></a>
+      </div>
+    </article>
+
+<article class="creator-card">
+      <a href="https://www.instagram.com/reel/DXMDE8NkxbR/" target="_blank" rel="noopener" class="media">
+        <img src="assets/gaurav-thumbnail.png" alt="Gaurav, creator behind Hum Tum in England, campaign video thumbnail">
+        <div class="play">▶</div>
+      </a>
+      <div class="creator-body">
+        <div class="creator-top"><div><h3>Gaurav</h3><div class="handle">Hum Tum in England · @humtuminengland</div></div><span class="tag">Instagram</span></div>
+        <p class="creator-desc">NRI creator collaboration aligned with the international parent-audience campaign.</p>
+        <div class="metrics"><div class="metric"><strong>5</strong><span>Reported enrolments</span></div><div class="metric"><strong>₹5L</strong><span>Indicative value*</span></div></div>
+        <div class="commercial">Quoted <b>₹1,25,000</b> · Negotiated <b>₹75,000</b><br>Saving <b>₹50,000</b></div>
+        <a class="view-link" href="https://www.instagram.com/reel/DXMDE8NkxbR/" target="_blank" rel="noopener">View creator profile <span>↗</span></a>
+      </div>
+    </article>
+
+<article class="creator-card">
+      <a href="https://www.instagram.com/p/DZimFE3xJ9_/" target="_blank" rel="noopener" class="media">
+        <img src="assets/manushri-thumbnail.png" alt="Manushri campaign video thumbnail">
+        <div class="play">▶</div>
+      </a>
+      <div class="creator-body">
+        <div class="creator-top"><div><h3>Manushri</h3><div class="handle">@manushridingari</div></div><span class="tag">Instagram</span></div>
+        <p class="creator-desc">Creator collaboration with a strong reported enrolment outcome for the campaign.</p>
+        <div class="metrics"><div class="metric"><strong>20</strong><span>Reported enrolments</span></div><div class="metric"><strong>₹20L</strong><span>Indicative value*</span></div></div>
+        <div class="commercial">Quoted <b>₹23,000</b> · Negotiated <b>₹10,300</b><br>Saving <b>₹12,700</b></div>
+        <a class="view-link" href="https://www.instagram.com/p/DZimFE3xJ9_/" target="_blank" rel="noopener">View live content <span>↗</span></a>
+      </div>
+    </article>
+
+<article class="creator-card">
+      <a href="https://www.youtube.com/watch?v=YPB-7-V_Ba4" target="_blank" rel="noopener" class="media media-swati">
+        <img src="assets/swati-thumbnail.png" alt="Swati Dhunna YouTube campaign video thumbnail">
+        <div class="play">▶</div>
+      </a>
+      <div class="creator-body">
+        <div class="creator-top"><div><h3>Swati Dhunna</h3><div class="handle">@SwatiDhunna</div></div><span class="tag">YouTube</span></div>
+        <p class="creator-desc">YouTube creator collaboration supporting the NRI parent-audience campaign.</p>
+        <div class="metrics"><div class="metric"><strong>6</strong><span>Reported enrolments</span></div><div class="metric"><strong>₹6L</strong><span>Indicative value*</span></div></div>
+        <div class="commercial">Quoted <b>₹50,000</b> · Negotiated <b>₹34,000</b><br>Saving <b>₹16,000</b></div>
+        <a class="view-link" href="https://www.youtube.com/watch?v=YPB-7-V_Ba4" target="_blank" rel="noopener">View YouTube channel <span>↗</span></a>
+      </div>
+    </article>
+
+<article class="creator-card">
+      <a href="https://www.instagram.com/reels/DYI3JJ5NaCc/" target="_blank" rel="noopener" class="media media-deepanu">
+        <img src="assets/deepanu-thumbnail.png" alt="Deepanu Instagram campaign video thumbnail">
+        <div class="play">▶</div>
+      </a>
+      <div class="creator-body">
+        <div class="creator-top"><div><h3>Deepanu</h3><div class="handle">@deepanu27</div></div><span class="tag">Instagram Reel</span></div>
+        <p class="creator-desc">Creator collaboration supporting Codeyoung's international parent-audience campaign.</p>
+        <div class="metrics"><div class="metric"><strong>4</strong><span>Reported enrolments</span></div><div class="metric"><strong>₹4L</strong><span>Indicative value*</span></div></div>
+        <div class="commercial">Quoted <b>₹20,000</b> · Negotiated <b>₹16,000</b><br>Saving <b>₹4,000</b></div>
+        <a class="view-link" href="https://www.instagram.com/reels/DYI3JJ5NaCc/" target="_blank" rel="noopener">View live Reel <span>↗</span></a>
+      </div>
+    </article>
+  </div>
+  <p class="note">*Indicative enrolment value is calculated using the approximate ₹1,00,000 value per enrolment shared for this portfolio. It is not audited revenue or confirmed cash collected. Enrolment counts are reported campaign outcomes. Commercials are shown in INR equivalents as supplied; original foreign-currency amounts and exchange-rate dates were not provided.</p>
+</section>
+
+<section class="section" id="agency">
+  <div class="section-head">
+    <div><div class="kicker">Agency experience · Confluencr</div><h2>Multi-brand creator scouting<br>& end-to-end campaign delivery.</h2></div>
+    <p class="section-intro">Across 15+ brand accounts, my core responsibilities focused on creator scouting, profile shortlisting and commercial negotiations. For the Dabur Almond Oil Valentine's campaign, I took on additional end-to-end ownership from the client brief through creator go-live.</p>
+  </div>
+
+  <div class="strategy-grid" style="margin:24px 0 34px;grid-template-columns:repeat(3,1fr)">
+    <div class="strategy"><b>CREATOR SCOUTING</b><h3>1,500+</h3><p>Creator profiles scouted in a three-month period.</p></div>
+    <div class="strategy"><b>BRAND PORTFOLIO</b><h3>15+</h3><p>Brands supported through creator discovery and shortlisting.</p></div>
+    <div class="strategy"><b>CORE RESPONSIBILITY</b><h3>Scouting & negotiation</h3><p>Creator discovery, profile evaluation, shortlisting and commercial negotiations across brand accounts.</p></div>
+  </div>
+
+  <div class="focusbox" style="margin-bottom:22px">
+    <div class="kicker">Featured campaign case study</div>
+    <h2 style="font-size:30px;margin:10px 0">Dabur Almond Oil</h2>
+    <p style="font-size:13px;line-height:1.7;color:var(--muted);margin:0 0 15px">Valentine's Day couple-creator campaign. This was the one Confluencr campaign I managed end to end: from the client meeting and brief understanding to creator research, cost evaluation, client approvals, creator coordination and go-live.</p>
+    <div class="metrics" style="grid-template-columns:repeat(3,1fr)">
+      <div class="metric"><strong>₹5 lakh</strong><span>Campaign budget</span></div>
+      <div class="metric"><strong>30</strong><span>Profiles scouted</span></div>
+      <div class="metric"><strong>3</strong><span>Creators finalised</span></div>
+    </div>
+    <p class="note">The initial campaign brief was for five couple creators. I sourced 30 relevant profiles with cost considerations, presented options for client review, and three creators were finalised with client approval. The figures above reflect the information shared for this case study; no additional campaign performance metrics have been assumed.</p>
+  </div>
+
+  <div class="section-head" style="margin:30px 0 18px">
+    <div><div class="kicker">Client-approved creator shortlist</div><h2 style="font-size:28px">Creators selected for the campaign.</h2></div>
+  </div>
+  <div class="creator-grid">
+    <article class="creator-card">
+      <div class="media agency-profile agency-profile-tanya"><img src="assets/tanya-profile.png" alt="Tanya Rathi profile photo"></div>
+      <div class="creator-body">
+        <div class="creator-top"><div><h3>Tanya Rathi</h3><div class="handle">Client-approved creator</div></div><span class="tag">Creator 01</span></div>
+        <p class="creator-desc">Shortlisted and finalised following creator research, cost evaluation and client approval.</p>
+        <a class="view-link" href="https://www.instagram.com/tanya_rathi/" target="_blank" rel="noopener">View Instagram profile <span>↗</span></a>
+      </div>
+    </article>
+    <article class="creator-card">
+      <div class="media agency-profile"><img src="assets/fahaam-profile.png" alt="Fahaam profile photo"></div>
+      <div class="creator-body">
+        <div class="creator-top"><div><h3>Fahaam</h3><div class="handle">@itz_fahaam</div></div><span class="tag">Creator 02</span></div>
+        <p class="creator-desc">Shortlisted and finalised following creator research, cost evaluation and client approval.</p>
+        <a class="view-link" href="https://www.instagram.com/itz_fahaam/" target="_blank" rel="noopener">View Instagram profile <span>↗</span></a>
+      </div>
+    </article>
+    <article class="creator-card">
+      <div class="media agency-profile agency-profile-tanisha"><img src="assets/tanisha-profile.png" alt="Tanisha profile photo"></div>
+      <div class="creator-body">
+        <div class="creator-top"><div><h3>Tanisha</h3><div class="handle">@tanisha09s</div></div><span class="tag">Creator 03</span></div>
+        <p class="creator-desc">Shortlisted and finalised following creator research, cost evaluation and client approval.</p>
+        <a class="view-link" href="https://www.instagram.com/tanisha09s/" target="_blank" rel="noopener">View Instagram profile <span>↗</span></a>
+      </div>
+    </article>
+  </div>
+</section>
+
+</main>
+
+<section class="closing" id="contact">
+  <div class="closing-inner">
+    <div><div class="eyebrow">Let's connect</div><h2>Thank you for<br>viewing my work.</h2><p>Kaniska · Influencer Marketing<br>Creator discovery, partnerships and campaign execution.</p></div>
+    <a href="#work">Explore creator work ↗</a>
+  </div>
+</section>
+<footer><div class="footer-inner"><span>© Kaniska · Influencer Marketing Portfolio</span><span>Influencer Marketing Portfolio</span></div></footer>
+<script>
+document.querySelectorAll('.navlinks a').forEach(a=>a.addEventListener('click',()=>document.querySelector('.navlinks').classList.remove('open')));
+</script>
+</body>
+</html>
